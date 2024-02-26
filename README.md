@@ -2,7 +2,8 @@
 The AI projects are inspired by Multiple Courses that I took and am taking in ML and DL
 
 - **Description**
-The whole idea of this Repo is to finally create a hierarchical path to embrace DL and ML
+-  The whole idea of this Repo is to finally create a hierarchical path to embrace DL and ML.
+-  Check each Docu in every folder for more detailed information of the projects
 
 
 ## Contact
