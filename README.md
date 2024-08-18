@@ -2,8 +2,8 @@
 The AI projects are inspired by Multiple Courses that I took and am taking in ML and DL
 
 **Description**
--  The whole idea of this Repo is to finally create a hierarchical path to embrace DL and ML.
--  Check each Docu in every folder for more detailed information of the projects
+-  The whole idea of this Repo is to create a hierarchical path to embrace DL and ML finally.
+-  Check each Docu in every folder for more detailed information on the projects
 
 ## Folder Structure
 - [docs](./docs): Documentation files
@@ -20,10 +20,9 @@ To get a local copy up and running follow these simple steps.
 
 ### Installation
 1. Clone the repository.
-   ```sh
-   git clone https://github.com/your-username/cie1-PipeNetwork-TUM.git
+2. Look for more at every single project
 
 ## Contact
 
-In case of questions, don't hesitate to contact [Behzad Tabari](mailto:behzad.tabari@tum.de).
+If you have any questions, please don't hesitate to contact [Behzad Tabari](mailto:behzad.tabari@tum.de).
 
