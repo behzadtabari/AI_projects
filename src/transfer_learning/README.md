@@ -1,5 +1,5 @@
 # Transfer Learning
-Whole point of transfer learning is to use a pretrained network and change the last layer, in this case I am taking the
+Whole point of transfer learning is to use a pretrained network and retrain usually the last layers or some layers, in this case I am taking the
 resnet and replace the last layer with tigers and Afghan Hounds dataset.
 
 **Description**
