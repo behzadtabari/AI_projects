@@ -2,7 +2,7 @@
 
 ## Motivation
 
-After years of working with deep learning, it is easy to overlook fundamentals that quietly but significantly affect results. This repository serves as a reminder that *basic choices still matter*, even in seemingly trivial setups.
+After years of working with deep learning, it is easy to overlook fundamentals that quietly but significantly affect results. This sub-folder serves as a reminder that *basic choices still matter*, even in seemingly trivial setups.
 
 ## Variance Amplification in GATs
 
