@@ -1,3 +1,37 @@
-GATs amplify variance twice. This is yet another reminder—despite years of working with deep learning—that even on *trivial synthetic binary tasks*, careless weight initialization can quietly ruin results. Initializing weights with a uniform (non–zero-mean) distribution noticeably degrades performance.
+# Going Back to Basics
 
-If this sounds obvious, run `1.py` and see it happen.
+## Motivation
+
+After years of working with deep learning, it is easy to overlook fundamentals that quietly but significantly affect results. This repository serves as a reminder that *basic choices still matter*, even in seemingly trivial setups.
+
+## Variance Amplification in GATs
+
+### Why GATs Are Sensitive
+
+Graph Attention Networks amplify variance twice:
+1. Through the attention mechanism itself
+2. Through neighborhood aggregation
+
+This makes them particularly sensitive to weight initialization.
+
+### A Simple Binary Experiment
+
+To make this effect explicit, we construct a small synthetic **binary node-classification task** and train a shallow GAT.
+
+Despite the simplicity of the data, improper initialization is enough to noticeably degrade performance.
+
+### Weight Initialization Matters
+
+Using a uniform distribution with a non–zero mean (e.g. `np.random.rand`) leads to poorer convergence and lower final accuracy compared to zero-mean Gaussian initialization (`np.random.randn`).
+
+This effect persists even when:
+- The task is binary
+- The data is synthetic
+- The model is shallow
+
+### Reproducing the Result
+
+Run the following script to reproduce the experiment:
+
+```bash
+python 1.py
