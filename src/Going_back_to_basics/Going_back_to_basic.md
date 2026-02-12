@@ -34,4 +34,17 @@ This effect persists even when:
 Run the following script to reproduce the experiment:
 
 ```bash
-python 1.py
+python gat_init_compare.py
+```
+
+## Visualization of Activations
+
+Well I might rethink the name that I have given to this part "Visualization of Activations", but I was wondering, how will each activation function act on a two-layer MLP, meaning that for me RELU is like a piecewise linear function summed up, which will be more clear if you run the script, feel free to use whatever you can to fit the bump in the random dataset.
+
+
+### Reproducing the Result
+
+Run the following script to reproduce the experiment:
+
+```bash
+python activ_vis.py
