@@ -1,8 +1,8 @@
 # Going Back to Basics
 
-## Motivation
 
 After years of working with deep learning, it is easy to overlook fundamentals that quietly but significantly affect results. This sub-folder serves as a reminder that *basic choices still matter*, even in seemingly trivial setups.
+
 
 ## Variance Amplification in GATs
 
@@ -48,3 +48,28 @@ Run the following script to reproduce the experiment:
 
 ```bash
 python activ_vis.py
+```
+
+## Prefetching
+
+Prefetching is a technique used in computing to improve performance by retrieving data or instructions before they are needed. By predicting what a program will request in the future, the system can load information in advance to reduced wait times, so how can find the optimal queue that can be used to fetch batches on CPU and then feed them for GPU computation.
+
+### A Simple Experiment
+
+I ran a graph level task with different number of workers to see how we can actually see that playing out.
+ - w = num_workers
+ - pin = whether pin_memory=True
+ - pers = persistent_workers=True
+ - pf = prefetch_factor
+ - cudaPref = whether CUDA stream prefetching was enabled
+
+please find prefetch.png and prefetch_2.png in the working directory, this traning is compute-bound on GPU, not data-bound on CPU, so it is evident why having zero number of workers yields the best results, But maybe in some tasks the batch creation is not cheap and actually computationally heavy.
+
+
+### Reproducing the Result
+
+Run the following script to reproduce the experiment:
+
+```bash
+python prefetching.py
+```
